@@ -4,13 +4,16 @@
 #     print(f"Good Job! The first message said {message}, and the second message said {second_message}")
 # else:
 #     print("Nice Try!")
-name = "martin luther   "
-#print out his name in title with no spaces.
-print(name.strip().title())
-print(name)
-print(f'The name "{name.strip().title()}" is the name of a famous man.')
-
-my_list = [1,2,3,4,5]
-for x in my_list:
-    print(f"{x}\t")
-print(my_list)
+# name = "martin luther   "
+# #print out his name in title with no spaces.
+# print(name.strip().title())
+# print(name)
+# print(f'The name "{name.strip().title()}" is the name of a famous man.')
+#
+# my_list = [1,2,3,4,5]
+# for x in my_list:
+#     print(f"{x}\t")
+# print(my_list)
+x,y,z = 0,0,0
+print(x,y,z)
+print(f"These are my 3 variables, {x}, {y}, and {z}")
