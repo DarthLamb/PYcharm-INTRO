@@ -1,0 +1,23 @@
+shopping_list = ['milk', 'bread', 'eggs']
+shopping_cart = []
+print('You have arrived at the grocery store! And you begin at the dairy aisle...')
+print('You examine your shopping list and go to grab a nearby milk and add it to your cart.')
+shopping_cart.append('milk')
+print('You cross "milk" off of your list.')
+shopping_list.remove('milk')
+print(f'Shopping List: {shopping_list, len(shopping_list)}')
+print(f'Shopping Cart: {shopping_cart}')
+print('\n')
+print('Next up is the eggs, which you grab and proceed to cross off the list.')
+popped_item = shopping_list.pop(-1)
+shopping_cart.append(popped_item)
+print(f'Shopping List: {shopping_list, len(shopping_list)}')
+print(f'Shopping Cart: {shopping_cart}')
+print('\n')
+print('The last item on your list is bread, and you find it nearby and add it to the cart.')
+shopping_cart.insert(2, 'bread')
+print('And you cross the last item on your list off! Congratulations :)')
+del shopping_list[0]
+print(f'Shopping List: {shopping_list, len(shopping_list)}')
+print(f'Shopping Cart: {shopping_cart}')
+print('\n')
