@@ -10,4 +10,8 @@ print(motorcycles)
 
 print("Now I am popping")
 popped_motorcycle = motorcycles.pop(0)
-print(popped_motorcycle)
+print(f"This is the popped motorcycle: {popped_motorcycle}")
+too_expensive = 'ducati'
+motorcycles.remove('ducati')
+print(f"This is the last motorcycle in the list: {motorcycles}, and this is the one I just removed "
+      f":{too_expensive}")
