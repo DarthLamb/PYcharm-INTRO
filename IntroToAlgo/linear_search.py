@@ -25,18 +25,3 @@ def linear_search(list, target):
 my_list = [1,2,3,4,5]
 linear_search(my_list, 2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
