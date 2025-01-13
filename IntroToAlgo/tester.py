@@ -1,4 +1,4 @@
-from codecs import make_identity_dict
+
 
 
 def linear_search(list, target):
