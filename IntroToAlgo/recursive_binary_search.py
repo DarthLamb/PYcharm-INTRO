@@ -43,9 +43,9 @@ def binary_search(list, target):
         if list[midpoint] == target:
             return midpoint
         elif list[midpoint] < target:
-            start = list[midpoint] + 1
+            start = midpoint + 1
         elif list[midpoint] > target:
-            final = list[midpoint] - 1
+            final = midpoint - 1
     return None
 
 result = binary_search(list, 8)
