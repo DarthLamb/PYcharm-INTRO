@@ -24,22 +24,25 @@ class Car:
         """Add a given amount to the odometer reading"""
         self.odometer_reading += miles
 
-my_new_car = Car('audi', 'a4', 2019)
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometer()
+class Battery:
+    """A simple attempt to model a battery for an electric car"""
+    def __init__(self, battery_size = 75):
+        self.battery_size = battery_size
 
-"""Modifying an attributes value directly"""
-my_new_car.odometer_reading = 23
-my_new_car.read_odometer()
-"""Modifying an attribute through a method"""
-my_new_car.update_odometer(26)
-my_new_car.read_odometer()
-my_new_car.update_odometer(22)
-"""Incrementing an attribute value through a method"""
-my_second_car = Car('subaru', 'outback', 2020)
-print(my_second_car.get_descriptive_name())#"""Get descriptive name is pretty important function"""
-my_second_car.update_odometer(20_324)
-my_second_car.read_odometer()
-my_second_car.increment_odometer(100)
-my_second_car.read_odometer()
+    def describe_battery(self):
+        """Print a statement describing the battery size"""
+        print(f"This car has a {self.battery_size}-kwh battery.")
+
+"""This is a child class"""
+class ElectricCar(Car):
+    """Represent aspects of car, specific to ev"""
+    def __init__(self, make, model, year):
+        """Initialize attribute of the parent class"""
+        super().__init__(make, model, year)
+        self.battery_size = 75
+        self.battery = Battery()
+
+my_tesla = ElectricCar('telsa', 'model s', 2019)
+print(my_tesla.get_descriptive_name())
+my_tesla.battery.describe_battery()
 
